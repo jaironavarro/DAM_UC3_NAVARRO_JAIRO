@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/XD"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/FB"
+        app:layout_constraintBottom_toBottomOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/selectableItemBackground" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Es gratis (y lo seguirá siendo)."
+        android:textColor="@color/blue_fb"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/txt_correo_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="300dp"
+        android:background="@color/FB"
+        android:text="Correo Electrónico"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.008" />
+
+    <TextView
+        android:id="@+id/txt_contra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:background="@color/FB"
+        android:backgroundTint="@color/FB"
+        android:text="Contraseña"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_correo_1"
+        app:layout_constraintStart_toEndOf="@+id/txt_correo_1"
+        app:layout_constraintTop_toTopOf="@+id/txt_correo_1" />
+
+    <EditText
+        android:id="@+id/txt_email"
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="@+id/txt_correo_1"
+        app:layout_constraintTop_toBottomOf="@+id/txt_correo_1"
+        tools:text="@string/txt_correo" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword2"
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_email"
+        app:layout_constraintStart_toStartOf="@+id/txt_contra"
+        app:layout_constraintTop_toTopOf="@+id/txt_email"
+        tools:text="@string/txt_contraseña_1" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="@color/blue_fb"
+        android:text="@string/btn_entrar"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPassword2"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPassword2"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPassword2" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/FB"
+        android:text="No cerrar sesión"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="@+id/txt_email"
+        app:layout_constraintTop_toBottomOf="@+id/txt_email" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/FB"
+        android:text="¿Has olvidado tu contraseña?"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBox"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword2"
+        app:layout_constraintTop_toTopOf="@+id/checkBox" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Regístrate"
+        android:textColor="@color/blue_fb"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <TextView
+        android:id="@+id/txt_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Nombre:"
+        android:textColor="@color/blue_fb"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/id_nombre"
+        android:layout_width="0dp"
+        android:layout_height="16dp"
+        android:background="@color/white"
+        android:drawableRight="@drawable/baseline_person_outline_24"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/txt_nombre"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_nombre"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toEndOf="@+id/txt_nombre"
+        app:layout_constraintTop_toTopOf="@+id/txt_nombre" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="86dp" />
+
+    <TextView
+        android:id="@+id/txt_apellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Apellidos:"
+        android:textColor="@color/blue_fb"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_nombre"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nombre" />
+
+    <EditText
+        android:id="@+id/id_apellido"
+        android:layout_width="0dp"
+        android:layout_height="16dp"
+        android:background="@color/white"
+        android:drawableRight="@drawable/baseline_person_outline_24"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_apellido"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toEndOf="@+id/txt_apellido"
+        app:layout_constraintTop_toTopOf="@+id/txt_apellido"
+        tools:text="@string/txt_apellido" />
+
+    <TextView
+        android:id="@+id/txt_correo_E"
+        android:layout_width="88dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:text="Tu dirección de correo electrónico:"
+        android:textColor="@color/blue_fb"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_apellido"
+        app:layout_constraintTop_toBottomOf="@+id/txt_apellido" />
+
+    <EditText
+        android:id="@+id/id_correo_electronico"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:background="@color/white"
+        android:drawableRight="@drawable/baseline_email_24"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="@string/txt_correo_E"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_correo_E"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toEndOf="@+id/txt_correo_E"
+        app:layout_constraintTop_toTopOf="@+id/txt_correo_E" />
+
+    <TextView
+        android:id="@+id/txt_new_contra"
+        android:layout_width="54dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="10dp"
+        android:text="Contraseña nueva:"
+        android:textColor="@color/blue_fb"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_correo_E"
+        app:layout_constraintTop_toBottomOf="@+id/txt_correo_E" />
+
+    <EditText
+        android:id="@+id/id_contraseña"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:background="@color/white"
+        android:drawableRight="@drawable/baseline_password_24"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="@string/txt_contraseña"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_new_contra"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toEndOf="@+id/txt_new_contra"
+        app:layout_constraintTop_toTopOf="@+id/txt_new_contra" />
+
+    <TextView
+        android:id="@+id/txt_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Sexo:"
+        android:textColor="@color/blue_fb"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_new_contra"
+        app:layout_constraintTop_toBottomOf="@+id/txt_new_contra" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_sex"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toEndOf="@+id/txt_sex"
+        app:layout_constraintTop_toTopOf="@+id/txt_sex">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:text="Mujer"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hombre"
+            android:textSize="10sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txt_fecha_nac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Fecha de nacimiento:"
+        android:textColor="@color/blue_fb"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_sex"
+        app:layout_constraintTop_toBottomOf="@+id/txt_sex" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:background="@color/white"
+        android:drawableRight="@drawable/baseline_date_range_24"
+        android:ems="10"
+        android:inputType="date"
+        android:text="@string/txt_nacimiento"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_fecha_nac"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toEndOf="@+id/txt_fecha_nac"
+        app:layout_constraintTop_toTopOf="@+id/txt_fecha_nac" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="¿Por qué tengo que dar esta información?"
+        android:textColor="@color/blue_fb"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toEndOf="@+id/txt_fecha_nac"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+
+    <Button
+        android:id="@+id/btn_registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/registro"
+        android:drawableLeft="@drawable/baseline_send_24"
+        android:text="@string/btn_Registrar"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="@color/FB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_registro" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider4">
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CREAR UNA PÁGINA "
+            android:textColor="@color/blue_fb"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="para un famoso, un grupo de música o empresa."
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

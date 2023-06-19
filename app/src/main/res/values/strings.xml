@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">DAM_UC3_JAIRO_NAVARRO</string>
+    <string name="btn_Registrar">Regístrate</string>
+    <string name="id_nombre" />
+    <string name="id_correo" />
+    <string name="btn_entrar">Entrar</string>
+    <string name="txt_correo" />
+    <string name="txt_contraseña_1" />
+    <string name="txt_apellido" />
+    <string name="txt_nombre" />
+    <string name="txt_correo_E" />
+    <string name="txt_contraseña" />
+    <string name="txt_nacimiento" />
+</resources>
